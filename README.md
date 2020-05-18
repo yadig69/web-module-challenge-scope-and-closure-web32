@@ -44,6 +44,11 @@ Edit the `ReadMe` file with your answers.
 1. In your own words, define closure (1-2 sentences).
 2. Study the following code, then answer the questions below.
 
+//*** */ counter 1 is a block scope and can only be access from with in the function
+
+//*** */ counter 2 is on the global scope a can be access from outside the function
+
+
 ```js
 function personalDice(name){
   return function(){
