@@ -122,7 +122,17 @@ and returns the score at each pont in the game, like so:
 9th inning: 6 - 10
 
 Final Score: 6 - 10 */
+let inning_callback = (inning) => ({ Home: inning(), Away: inning() });
 
-function scoreboard( /* CODE HERE */ ) {
-    /* CODE HERE */
+function scoreboard(inning_callback, inning, number_of_innings) {
+    let finalScores = { Home: 0, Away: 0 };
+
+    for (let i = 0; i <= number_of_innings; i++) {
+        let currentInning = inning_callback(inning);
+        console.log(`${ ( i ) } inning: ${ currentInning[ "Away" ] } - ${ currentInning[ "Home" ] }`);
+        finalScores["Away"] += currentInning["Away"];
+        finalScores["Away"] += currentInning["Home"];
+    }
+    console.log(`Final Score: ${ finalScores[ "Away" ]} - ${ finalScores [ "Home" ]}`);
 }
+scoreboard(inning_callback, inning, 9); 
