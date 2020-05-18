@@ -22,7 +22,7 @@ function processFirstItem(stringList, callback) {
 
 
 ///// M V P ///////
-
+ 
 /* Task 1: `counterMaker`
  * Study the code for counter1 and counter2. Answer the questions below.
  * 

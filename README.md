@@ -5,7 +5,7 @@ The module challenge is the afternoon project or assignment that students work t
 ## JavaScript Foundations
 
 ## Scope and Closures
-
+2 i
 ## Objectives
 
 - Explain function scope
